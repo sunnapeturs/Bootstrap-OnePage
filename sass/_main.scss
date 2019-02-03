@@ -1,0 +1,154 @@
+//Containers
+.background{ 
+  width: 100%;
+  background-color: $secondary-color;
+}
+.second-background{
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+.my-wrapper{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  @media(min-width:800px) {
+    flex-direction: row;
+  }
+}
+.custom-container{
+  padding-top: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+.custom-container2{
+  width: 80%;
+  margin: 0 auto;
+}
+//Text
+.headline{
+  font-size: 2rem;
+  margin-top: 2rem;
+  @media(min-width:800px) {
+    font-size:48px;
+  }
+}
+.headline2{
+  font-size: 1.5rem;
+  @media(min-width:800px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+.text{
+  color:$primary-color;
+  font-size: 1rem;
+  margin:1rem 0;
+  line-height: 2rem;
+  @media(min-width:800px) {
+    font-size:1.25rem;
+    line-height:3rem;
+  }
+}
+.dark-text{
+  color:$secondary-color;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  @media(min-width:800px) {
+    font-size:1.25rem;
+    line-height: 3rem;
+  }
+}
+
+//IMG
+.img-holder1{
+  width: 100%;
+}
+.img1{
+  width: 100%;
+  object-fit: cover;
+}
+.img-computer{
+  @media(min-width:800px) {
+    margin-left: -100px;
+  }
+} 
+.logo-img{
+  height:56px;
+  width: 64px;
+  margin-bottom:1rem;
+  @media(min-width:800px) {
+    height:70px;
+    width: 80px;
+  }
+}
+.profile-img{
+  height: 160px;
+  width: 160px;
+}
+.logo-2{
+  width:120px;
+  height:124px;
+}
+//Btn
+.sign-up-btn{
+  width: 100%;
+  height: 56px;
+  margin-top: 20px;
+  background-color: $primary-color;
+  color: #190f62;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  line-height: 32px;
+  border:none;
+  &:hover{
+    background-color:lighten( $primary-color, 1% );
+    color: $secondary-color; 
+  }
+}
+#input-form{
+    height: 64px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    border-color: rgba(236,233,255,.32);
+    background-color: transparent;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 40px;
+    line-height: 32px;
+    padding-left: 32px;
+    border-style: solid;
+    border-width: 1.6px;
+}
+#second-input-btn{
+    height: 64px;
+    margin-bottom: 0;
+    border-color: rgba(236,233,255,.32);
+    border-radius: 40px 0 0 40px;
+    background-color: transparent;
+    color: $primary-color;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    padding-left: 32px;
+    border-style: solid;
+    border-width: 1.6px
+}
+.form-second-btn{  
+  height: 64px;
+  margin-left: -2px;
+  padding-right: 28px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: $primary-color;
+  color: #190f62;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  &:hover{
+    background-color:lighten( $primary-color, 1% );
+    color: #190f62;
+  }
+}
